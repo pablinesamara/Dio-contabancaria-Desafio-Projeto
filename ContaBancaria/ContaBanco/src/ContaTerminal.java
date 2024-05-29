@@ -6,8 +6,8 @@ public class ContaTerminal {
      * @throws Exception
      */
     public static void main(String[] args) {
-        int numero = 0;
-        String agencia = "";
+        int numero;
+        String agencia;
         String nomeCliente = "";
         float saldo = 0.0f;
 
@@ -37,7 +37,7 @@ public class ContaTerminal {
                     sc.nextLine(); // Limpa o buffer do teclado após ler um float
                     break;
                 case 2:
-                    System.out.println("Saldo: " + saldo);
+                    System.out.println(nomeCliente +" Seu saldo é : " + saldo);
                     break;
                 case 3:
                     System.out.println("Digite o valor do Saque:");
@@ -48,7 +48,7 @@ public class ContaTerminal {
                     } else {
                         System.out.println("Saldo insuficiente!");
                     }
-                    System.out.println(nomeCliente+"Saldo atual: " + saldo);
+                    System.out.println(nomeCliente+" Saldo atual: " + saldo);
                     sc.nextLine(); // Limpa o buffer do teclado após ler um float
                     break;
                 case 0:
